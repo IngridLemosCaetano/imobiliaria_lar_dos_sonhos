@@ -1,1 +1,14 @@
-/* Em Construção */
+.hero{
+    background: url("../../imagens/cover.jpg") center/cover no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.hero-overlay{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 32px;
+    width: 100%;
+}

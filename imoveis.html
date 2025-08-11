@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/style/style.css">
     <title>Imóveis</title>
 </head>
 <body>
@@ -39,11 +41,41 @@
         </nav>
     </header>
 
-    <main class="container text-center py-2 mt-4">
-        <h1 class="fs-2">Encontre seu novo lar aqui!</h1>
-
-
+    <main class="hero">
+        <div class="hero-overlay">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold">Encontre seu novo lar aqui!</h2>
+            </div>
+        </div>
     </main>
+
+    <div class="container">
+        <div class="d-flex justify-content-md-between m-md-4">
+            <div>
+                <div>
+                    <h2 class="fs-4">300 Imóveis à venda e para alugar</h2>
+                </div>
+                <div class="d-flex" >
+                    <a href="./index.html" class="">Home</a>
+                    <img src="./imagens/right-arrow.svg" alt="" style="width: 10px;">
+                    <a href="./imoveis.html">Imóveis</a>
+                </div>
+
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ordenar
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Menor Valor</a></li>
+                    <li><a class="dropdown-item" href="#">Maior Valor</a></li>
+                    <li><a class="dropdown-item" href="#">Mais Recentes</a></li>
+                    <li><a class="dropdown-item" href="#">Mais Antigos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 
     <section class="container">
         <div class="row">
@@ -82,16 +114,18 @@
                     </div>
 
                     <!-- Fim Carrocel -->
-                    <div class="d-flex flex-column g-4">
-                        <p>KN0101</p>
-                        <p>Kitnet<p>                            
-                        <p>Jardim São Luis - São Paulo - SP</p>
-                        <p>25m2 * 1 Quarto * Garagem</p>
-                        <p>Locação</p>
-                        <p>R$1200/mês</p>
-                        
-                        <a href="./detalhes.htm" class="btn btn-dark">Saiba mais</a>
+                    <div class="card-home-info">
+                        <p class="m-0">KN0101</p>
+                        <p class="m-0">Kitnet<p>
+                        <p class="m-0">Jardim São Luis - São Paulo - SP</p>
+                        <div><i class="bi bi-aspect-ratio"></i> 62 m²</div>
+                        <div><i class="bi bi-house-door"></i> 2 Quartos</div>
+                        <div><i class="bi bi-door-closed"></i> 0 Suíte</div>
+                        <div><i class="bi bi-car-front"></i> 1 Vaga</div>
+                        <div><i class="bi bi-bucket"></i> 1 Banheiro</div>
+                        <p class="m-0">R$1200/mês</p>
                     </div>
+                    <a href="./detalhes.htm" class="btn btn-dark">Saiba mais</a>
                 </div>
             </div>
         </div>
