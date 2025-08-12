@@ -12,3 +12,10 @@
     padding: 32px;
     width: 100%;
 }
+
+.card-home-info{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
